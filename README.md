@@ -144,11 +144,9 @@ $$
 R_{30}(t) = \sum_{k=0}^{29} r_p(t-k),
 $$
 
-and determining the \((1-\alpha)\) percentile.  
+and determining the $\((1-\alpha)\)$ percentile.  
 
-At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of the time**.  
-
-The empirical distribution is visualized using **kernel density estimation**.
+At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of the time**. The empirical distribution is visualized using **kernel density estimation**.
 
 
 ## Minimum Variance Portfolio Var:
