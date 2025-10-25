@@ -1,4 +1,4 @@
-                                  Portfolio Optimization
+                                  Portfolio Optimization and Risk Assessment: A Computational Approach u
 
 Constructed the Minimum Variance Portfolio and optimized Tendency and Desired Portfolios using
 a variance-covariance matrix. To assess risk, I applied Value at Risk (VaR) to quantify the 
