@@ -39,6 +39,23 @@ $$
 Log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
 
 
+2.2 Minimum Variance Portfolio
+
+A minimum variance portfolio is a selection of assets that aims to minimize the overall volatility or risk of the portfolio. It achieves this by carefully allocating investments across different assets based on their historical volatilities, expected returns, and correlations with each other. The goal is to construct a portfolio where the assets' movements offset each other as much as possible, reducing the portfolio's overall risk.
+
+Investors often use minimum variance portfolios when they prioritize capital preservation and aim to minimize downside risk. These portfolios are particularly relevant in volatile markets or for risk-averse investors who prioritize stability and are willing to accept potentially lower returns in exchange for reduced risk.
+
+**Minimum Variance Portfilio Weight**
+
+$$
+\text{MPV_weight} = \frac{\Sigma^{-1} \mathbf{1}}{\sum_{i=1}^{n} \mathbf{1}    (\Sigma^{-1}\mathbf{1})}
+$$
+
+where,
+$$\Sigma^{-1}\, \text{is the inverse of covariance matrix.} $$
+$$\mathbf{1} \,\text{ is the matrix of 1's} $$
+
+
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
 <img width="727" alt="Screenshot 2024-11-05 at 11 00 58 AM" src="https://github.com/user-attachments/assets/1364554e-dddf-4e49-9b07-5cb91bebab03">
 
