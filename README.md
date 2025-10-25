@@ -165,8 +165,8 @@ At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of t
 <img width="936" alt="Screenshot 2024-11-05 at 11 13 55 AM" src="https://github.com/user-attachments/assets/5e3b5a94-a85f-4744-a6f6-f7d1f4a7b8e4">
 
 4. Stochastic Simulation: Geometric Brownian Motion
-
-Asset prices follow the stochastic differential equation:
+   
+The Geometric Brownian Motion (GBM) models asset prices through the stochastic differential equation:
 
 $$
 dS_t = \mu S_t \, dt + \sigma S_t \, dW_t,
@@ -181,6 +181,8 @@ where:
   - independent increments,
   - $W_t \sim N(0, t)$,
   - continuous paths.
+ 
+This formulation ensures $S_t > 0$ for all $t \ge 0$ when $S_0 > 0$, making it suitable for modeling **asset prices**. The **multiplicative noise structure** ($\sigma S_t \, dW_t$) ensures that **percentage changes remain bounded**, while allowing **absolute price changes to scale with the price level**.
 
 Applying **Itô's lemma** yields:
 
@@ -188,7 +190,7 @@ $$
 S_t = S_0 \exp\Big[(\mu - \frac{\sigma^2}{2}) t + \sigma W_t\Big].
 $$
 
-For numerical simulation, we discretize using **Euler–Maruyama**:
+For **computational implementation**, we discretize using the **Euler–Maruyama scheme**. Partition the interval $[0, T]$ into $n$ subintervals of width: $$ \Delta t = \frac{T}{n} $$
 
 $$
 S_{t+\Delta t} = S_t \exp\Big[(\mu - \frac{\sigma^2}{2}) \Delta t + \sigma \sqrt{\Delta t} \cdot Z_t\Big],
