@@ -45,13 +45,12 @@ A minimum variance portfolio is a selection of assets that aims to minimize the 
 
 Investors often use minimum variance portfolios when they prioritize capital preservation and aim to minimize downside risk. These portfolios are particularly relevant in volatile markets or for risk-averse investors who prioritize stability and are willing to accept potentially lower returns in exchange for reduced risk.
 
-**Minimum Variance Portfilio Weight**
-
 $$
-\text{MPV_weight} = \frac{\Sigma^{-1} \mathbf{1}}{\sum_{i=1}^{n} \mathbf{1}    (\Sigma^{-1}\mathbf{1})}
+\text{MPV_weight} = \frac{\Sigma^{-1} \mathbf{1}}{\sum_{i=1}^{n} \mathbf{1}(\Sigma^{-1}\mathbf{1})}
 $$
 
 where,
+
 $$\Sigma^{-1}\, \text{is the inverse of covariance matrix.} $$
 $$\mathbf{1} \,\text{ is the matrix of 1's} $$
 
