@@ -30,10 +30,11 @@ $$
 - **Diagonal elements** (σᵢᵢ) represent individual asset variances.  
 - **Off-diagonal elements** (σᵢⱼ) measure co-movement between assets *i* and *j*.
 
-We use **logarithmic returns**:
+We used **logarithmic returns**:
 
+$$ 
 rₜ = ln(Pₜ / Pₜ₋₁)
-
+$$
 Log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
 
 
