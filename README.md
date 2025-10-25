@@ -1,16 +1,14 @@
-                                  Portfolio Optimization and Risk Assessment: A Computational Approach u
+                                  Portfolio Optimization and Risk Assessment: A Mathematical Framework for Value-at-Risk Assessment and Stochastic Price Simulation
 
 
 This presents a comprehensive computational framework for portfolio optimization and risk assessment, integrating classical mean-variance optimization with stochastic simulation methods. We implement three distinct portfolio construction strategies: Minimum Variance Portfolio (MVP), Tendency Portfolio, and Desired Portfolio, utilizing variance-covariance matrix estimation from historical equity data. Risk quantification is performed through parametric Value at Risk (VaR) calculations at multiple confidence levels. Furthermore, we employ Geometric Brownian Motion (GBM) to simulate forward-looking price trajectories over a three-month horizon, providing probabilistic forecasts of portfolio performance. The methodology demonstrates the practical application of optimization theory, numerical linear algebra, and stochastic calculus to quantitative finance, offering a robust framework for portfolio management decision-making under uncertainty.
 
-Constructed the Minimum Variance Portfolio and optimized Tendency and Desired Portfolios using
-a variance-covariance matrix. To assess risk, I applied Value at Risk (VaR) to quantify the 
-maximum potential loss each portfolio could face over a specified period with a given confidence
-level. 
+ ##1. Methodology##
+This research extends classical optimization by incorporating advanced risk metrics and stochastic simulation. I analyze nine securities (TSLA, AAPL, NVDA, TSM, ABEV, VTEB, V, AMD, BA) using seven years of daily prices, employing covariance matrix estimation, analytical portfolio optimization, Monte Carlo simulation for risk assessment, and path-dependent stochastic modeling.
 
-Additionally, I utilized Geometric Brownian Motion (GBM) to simulate the price movements of
-the portfolios and their individual assets over a three-month horizon, based on historical 
-volatility and drift.
+ ##2. Mathematical Foundation##
+ 2.1 Covariance Matrix Estimation
+
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
 <img width="727" alt="Screenshot 2024-11-05 at 11 00 58 AM" src="https://github.com/user-attachments/assets/1364554e-dddf-4e49-9b07-5cb91bebab03">
