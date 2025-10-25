@@ -67,8 +67,17 @@ $$
 \sigma_{\text{MVP}} = \sqrt{\frac{1}{\mathbf{1}' \Sigma^{-1} \mathbf{1}}}
 $$
 
+2.3 Tangency Portfolio
 
+In Constrast, A tendency portfolio is a strategy that capitalizes on persistent trends or patterns in asset prices or market behaviors. It involves selecting assets based on their historical performance trends, such as momentum or mean reversion. The goal is to exploit these tendencies to achieve superior returns.
 
+$$
+\text{TP_weight} = \frac{\Sigma^{-1} \mathbf{R}_i}{\sum_{i=1}^{n} \mathbf{R}_i \,(\Sigma^{-1}\mathbf{1})}
+$$
+where,
+$$\Sigma^{-1}\, \text{is the inverse of covariance matrix.} $$
+$$\mathbf{1} \,\text{ is the matrix of 1's} $$
+$$\mathbf{R} \,\text{ is the return of assets} $$
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
 <img width="727" alt="Screenshot 2024-11-05 at 11 00 58 AM" src="https://github.com/user-attachments/assets/1364554e-dddf-4e49-9b07-5cb91bebab03">
