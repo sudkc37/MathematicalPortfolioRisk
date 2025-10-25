@@ -114,7 +114,7 @@ For a target return $\mu^*$, the optimal weight vector via Lagrangian optimizati
 
 
 $$
-w = \left(\frac{c - b\mu^*}{d} \right) \Sigma^{-1} \mathbf{1} + \left(\frac{a \mu^* - b}{d} \right) \Sigma^{-1} R
+\mathbf{w} = \frac{c - b \mu^*}{d} \, \Sigma^{-1} \mathbf{1} \; + \; \frac{a \mu^* - b}{d} \, \Sigma^{-1} \mathbf{R}
 $$
 
 This separates the weights into **risk-minimizing** and **return-targeting** components.
