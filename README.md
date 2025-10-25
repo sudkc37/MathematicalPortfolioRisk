@@ -164,6 +164,45 @@ At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of t
 
 <img width="936" alt="Screenshot 2024-11-05 at 11 13 55 AM" src="https://github.com/user-attachments/assets/5e3b5a94-a85f-4744-a6f6-f7d1f4a7b8e4">
 
+4. Stochastic Simulation: Geometric Brownian Motion
+
+Asset prices follow the stochastic differential equation:
+
+$$
+dS_t = \mu S_t \, dt + \sigma S_t \, dW_t,
+$$
+
+where:
+
+- $\mu$ is the drift,
+- $\sigma$ is the volatility,
+- $W_t$ is Brownian motion with properties:
+  - $W_0 = 0$,
+  - independent increments,
+  - $W_t \sim N(0, t)$,
+  - continuous paths.
+
+Applying **Itô's lemma** yields:
+
+$$
+S_t = S_0 \exp\Big[(\mu - \frac{\sigma^2}{2}) t + \sigma W_t\Big].
+$$
+
+For numerical simulation, we discretize using **Euler–Maruyama**:
+
+$$
+S_{t+\Delta t} = S_t \exp\Big[(\mu - \frac{\sigma^2}{2}) \Delta t + \sigma \sqrt{\Delta t} \cdot Z_t\Big],
+$$
+
+where $Z_t \sim N(0, 1)$ and $\Delta t = 1/252$.  
+
+**Monte Carlo simulation** generates $M$ independent paths over $n$ steps for three-month horizons ($T = 3/12$), with parameters:
+
+- $\hat{\mu} = E[r_t]$,
+- $\hat{\sigma} = \sqrt{\text{Var}[r_t]}$  
+
+estimated from historical data.
+
 
 ## Simulated Value of Minimum Variance Portfolio:
 <img width="770" alt="Screenshot 2024-11-05 at 11 09 03 AM" src="https://github.com/user-attachments/assets/6c5ab1fa-a78a-4c39-b783-40ee39969a2c">
