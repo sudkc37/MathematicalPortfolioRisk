@@ -95,7 +95,7 @@ $$
 
 The efficient frontier represents portfolios that maximize return for a given level of risk.  
 
-Defining the following parameters:  
+Define the following parameters:  
 
 $$
 a = \mathbf{1}' \Sigma^{-1} \mathbf{1}, \quad
@@ -104,17 +104,17 @@ c = R' \Sigma^{-1} R, \quad
 d = ac - b^2
 $$
 
-the efficient frontier is given by:  
+Then, the efficient frontier is:  
 
 $$
-\sigma_p^2 = \frac{a\mu_p^2 - 2b\mu_p + c}{d}
+\sigma_{p}^{2} = \frac{a\mu_{p}^{2} - 2b\mu_{p} + c}{d}
 $$
 
-For a target return \( \mu^* \), the optimal weight vector obtained via Lagrangian optimization is:  
+For a target return \( \mu^{*} \), the optimal weight vector from Lagrangian optimization is:  
 
 $$
-w = \left(\frac{c - b\mu^*}{d}\right) \Sigma^{-1}\mathbf{1}
-    + \left(\frac{a\mu^* - b}{d}\right) \Sigma^{-1}R
+w = \left( \frac{c - b\mu^{*}}{d} \right) \Sigma^{-1}\mathbf{1}
+  + \left( \frac{a\mu^{*} - b}{d} \right) \Sigma^{-1}R
 $$
 
 This decomposition separates the weights into **risk-minimizing** and **return-targeting** components.
