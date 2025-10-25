@@ -11,6 +11,9 @@ This research extends classical optimization by incorporating advanced risk metr
  
 2.1 Covariance Matrix Estimation
 
+<h3><span style="color:green; font-weight:bold;">2.1 Covariance Matrix Estimation</span></h3>
+
+
 The covariance matrix **Σ ∈ ℝⁿˣⁿ** captures the variance–covariance structure of asset returns.  
 For assets *i* and *j*:
 
