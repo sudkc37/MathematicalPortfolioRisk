@@ -258,10 +258,10 @@ Strong correlation among technology stocks suggests limited intra-sector diversi
 
  **Minimum Variance Portfolio**  
 
-- **Return:** 2.39%  
-- **Volatility:** 5.55%  
-- **Sharpe Ratio:** 0.071 ($R_f = 2\%$)  
-- **Allocation:** 98.3% in VTEB  
+- Return: 2.39%  
+- Volatility: 5.55%  
+- Sharpe Ratio: 0.071 ($R_f = 2\%$)  
+- Allocation: 98.3% in VTEB  
 
 The extreme concentration in lowest-variance assets, with negative weights (short positions) in select equities, minimizes portfolio variance.
 
@@ -269,10 +269,10 @@ The extreme concentration in lowest-variance assets, with negative weights (shor
 
 **Tangency Portfolio**  
 
-- **Return:** 32.15%  
-- **Volatility:** 20.33%  
-- **Sharpe Ratio:** 1.484  
-- **Major Allocations:**  
+- Return: 32.15%  
+- Volatility: 20.33%  
+- Sharpe Ratio: 1.484  
+- Major Allocations:  
   - VTEB: 75.3%  
   - NVDA: 33.9%  
   - AAPL: 21.1%  
@@ -283,10 +283,10 @@ Strategic overweighting of high-return assets, combined with short positions in 
 
  <h3><span style="color:green; font-weight:bold;"> 3.3 Value-at-Risk Comparison</span></h3>
 
- For an initial portfolio value of **$100,000**, the **30-day Value at Risk (VaR) at 95% confidence** is:
+ For an initial portfolio value of $100,000, the 30-day Value at Risk (VaR) at 95% confidence is:
 
-- **Minimum Variance Portfolio (MVP) VaR:** $2,667 (2.67%)  
-- **Tangency Portfolio (TP) VaR:** $14,941 (14.94%)  
+- Minimum Variance Portfolio (MVP) VaR: $2,667 (2.67%)  
+- Tangency Portfolio (TP) VaR: $14,941 (14.94%)  
 
 The six-fold difference highlights the tail risk disparity between the portfolios.  
 
@@ -296,11 +296,11 @@ The six-fold difference highlights the tail risk disparity between the portfolio
 
 <h3><span style="color:green; font-weight:bold;">  3.4 Optimized Portfolio</span></h3>
 
- For a **5% target return**:
+ For a 5% target return:
 
-- **Volatility:** 6.65%  
-- **30-day VaR:** $3,931 (3.93%)  
-- **Portfolio Allocations:**  
+- Volatility: 6.65%  
+- 30-day VaR: $3,931 (3.93%)  
+- Portfolio Allocations:
   - VTEB: 104.1%  
   - AAPL: 3.9%  
   - NVDA: 3.9%  
