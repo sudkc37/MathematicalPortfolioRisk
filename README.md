@@ -96,37 +96,7 @@ $$
 
 <h3><span style="color:green; font-weight:bold;">2.4 Efficient Frontier and Constrained Optimization</span></h3>
 
-The **efficient frontier** represents portfolios that maximize return for a given level of risk.
-
-Define the following:
-
-- **a** = 1′Σ⁻¹1  
-- **b** = R′Σ⁻¹1  
-- **c** = R′Σ⁻¹R  
-- **d** = ac − b²  
-
-Then, the frontier equation is:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The efficient frontier represents portfolios that maximize return for a given level of risk.  
-
-Define the following parameters:  
+The efficient frontier represents portfolios that maximize return for a given level of risk. We define the following **a** = 1′Σ⁻¹1,  **b** = R′Σ⁻¹1, **c** = R′Σ⁻¹R, **d** = ac − b². Then, the frontier equation is:
 
 $$
 a = \mathbf{1}' \Sigma^{-1} \mathbf{1}, \quad
@@ -134,6 +104,15 @@ b = R' \Sigma^{-1} \mathbf{1}, \quad
 c = R' \Sigma^{-1} R, \quad
 d = ac - b^2
 $$
+
+For a target return **μ\***, we solve the constrained optimization problem using Lagrangian multipliers with two constraints i.e **w′R = μ\***  (target return) and **w′1 = 1**  (budget constraint)
+
+The Lagrangian function is:
+
+
+
+
+
 
 Then, the efficient frontier is given by:  
 
