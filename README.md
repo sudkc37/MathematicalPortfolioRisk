@@ -98,7 +98,9 @@ $$
 
 The efficient frontier represents portfolios that maximize return for a given level of risk. We define the following as:
 
-**a** = 1′Σ⁻¹1,  **b** = R′Σ⁻¹1, **c** = R′Σ⁻¹R, **d** = ac − b². Then, the frontier equation is:
+**a** = 1′Σ⁻¹1,  **b** = R′Σ⁻¹1, **c** = R′Σ⁻¹R, **d** = ac − b². 
+
+Then, the frontier equation is:
 
 $$
 a = \mathbf{1}' \Sigma^{-1} \mathbf{1}, \quad
