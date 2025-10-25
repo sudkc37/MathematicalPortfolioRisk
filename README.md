@@ -110,14 +110,12 @@ $$
 \sigma_p^2 = \frac{a\mu_p^2 - 2b\mu_p + c}{d}
 $$
 
-For a target return \( \mu^* \), the optimal weight vector obtained via Lagrangian optimization is:  
+For a target return \( \mu^* \), the optimal weight vector obtained via Lagrangian optimization is:
 
 $$
 w = \left( \frac{c - b\mu^*}{d} \right) \Sigma^{-1}\mathbf{1}
   + \left( \frac{a\mu^* - b}{d} \right) \Sigma^{-1}R
 $$
-
-This decomposition separates the weights into **risk-minimizing** and **return-targeting** components.
 
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
