@@ -204,6 +204,11 @@ where $Z_t \sim N(0, 1)$ and $\Delta t = 1/252$.
 estimated from historical data.
 
 
+## Simulated Price of Individual Assets:
+<img width="893" alt="Screenshot 2024-11-05 at 11 12 18 AM" src="https://github.com/user-attachments/assets/28d120e5-80c1-498d-a4cb-2ec9d0fd5d1f">
+
+<img width="893" alt="Screenshot 2024-11-05 at 11 12 34 AM" src="https://github.com/user-attachments/assets/ad4fd576-dbf5-43cb-b430-c6e77d6ae0fb">
+
 ## Simulated Value of Minimum Variance Portfolio:
 <img width="770" alt="Screenshot 2024-11-05 at 11 09 03 AM" src="https://github.com/user-attachments/assets/6c5ab1fa-a78a-4c39-b783-40ee39969a2c">
 
@@ -212,11 +217,4 @@ estimated from historical data.
 
 ## Simulated Value of Desired Portfolio:
 <img width="758" alt="Screenshot 2024-11-05 at 11 10 21 AM" src="https://github.com/user-attachments/assets/0019d66e-1653-4a24-9b7a-4e12e134f3c5">
-
-## Simulated Price of Individual Assets:
-<img width="893" alt="Screenshot 2024-11-05 at 11 12 18 AM" src="https://github.com/user-attachments/assets/28d120e5-80c1-498d-a4cb-2ec9d0fd5d1f">
-
-<img width="893" alt="Screenshot 2024-11-05 at 11 12 34 AM" src="https://github.com/user-attachments/assets/ad4fd576-dbf5-43cb-b430-c6e77d6ae0fb">
-
-
 
