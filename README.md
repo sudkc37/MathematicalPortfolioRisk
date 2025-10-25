@@ -98,10 +98,6 @@ $$
 
 The efficient frontier represents portfolios that maximize return for a given level of risk. We define the following as:
 
-**a** = 1′Σ⁻¹1  **b** = R′Σ⁻¹1 **c** = R′Σ⁻¹R **d** = ac − b². 
-
-Then, the frontier equation is:
-
 $$
 a = \mathbf{1}' \Sigma^{-1} \mathbf{1}, \quad
 b = R' \Sigma^{-1} \mathbf{1}, \quad
@@ -109,27 +105,35 @@ c = R' \Sigma^{-1} R, \quad
 d = ac - b^2
 $$
 
-For a target return **μ\***, we solve the constrained optimization problem using Lagrangian multipliers with two constraints i.e **w′R = μ\***  (target return) and **w′1 = 1**  (budget constraint)
-
-The Lagrangian function is:
-
-
-
-
-
-
 Then, the efficient frontier is given by:  
 
 $$
 \sigma p^2 = \frac{a\mu_p^2 - 2b\mu_p + c}{d}
 $$ 
 
-For a target return $\mu^*$, the optimal weight vector via Lagrangian optimization is:
+For a target return **μ\***, we solve the constrained optimization problem using Lagrangian multipliers with two constraints i.e **w′R = μ\***  (target return) and **w′1 = 1**  (budget constraint). The Lagrangian function is:
+
+
+Taking first-order conditions (∂ℒ/∂w = 0) and solving the resulting system yields:
 
 ![w equation](https://latex.codecogs.com/png.image?\dpi{150}\bg_white\mathbf{w}=\left(\frac{c-b\mu^*}{d}\right)\Sigma^{-1}\mathbf{1}+\left(\frac{a\mu^*-b}{d}\right)\Sigma^{-1}\mathbf{R})
 
+This solution decomposes into two interpretable components:
 
-This separates the weights into **risk-minimizing** and **return-targeting** components.
+1. **Risk-minimizing component:**  
+   `((c − bμ*) / d) · (Σ⁻¹1)`  
+   Represents the allocation pattern that **minimizes variance**, proportional to the **Minimum Variance Portfolio (MVP)** weights.
+
+2. **Return-targeting component:**  
+   `((aμ* − b) / d) · (Σ⁻¹R)`  
+   Represents the allocation adjustments needed to **achieve the target return**, proportional to the **Tangency Portfolio** weights.
+
+---
+
+The coefficients `((c − bμ*) / d)` and `((aμ* − b) / d)` determine the **relative weighting** between these two objectives.  
+As **μ\*** increases above the MVP return, the return-targeting component receives greater weight, increasing portfolio risk to achieve higher expected returns.
+
+This formulation elegantly captures the **risk–return trade-off** in portfolio theory through a **linear combination of two basis portfolios**.
 
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
