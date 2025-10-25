@@ -190,7 +190,7 @@ $$
 S_t = S_0 \exp\Big[(\mu - \frac{\sigma^2}{2}) t + \sigma W_t\Big].
 $$
 
-For **computational implementation**, we discretize using the **Euler–Maruyama scheme**. Partition the interval $[0, T]$ into $n$ subintervals of width: $$ \Delta t = \frac{T}{n} $$
+For **computational implementation**, we discretize it using the **Euler–Maruyama scheme**. This Partition the interval $[0, T]$ into $n$ subintervals of width: $$\Delta t = \frac{T}{n}$$
 
 $$
 S_{t+\Delta t} = S_t \exp\Big[(\mu - \frac{\sigma^2}{2}) \Delta t + \sigma \sqrt{\Delta t} \cdot Z_t\Big],
