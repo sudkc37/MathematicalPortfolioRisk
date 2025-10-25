@@ -131,8 +131,11 @@ This solution decomposes into two interpretable components:
 ---
  
 The coefficients
-  $\frac{c - b\mu^*}{d}$ and 
-  $\frac{a\mu^* - b}{d}$ determine the relative weighting between these two objectives. As **μ\*** increases above the MVP return, the return-targeting component receives greater weight, increasing portfolio risk to achieve higher expected returns. This formulation elegantly captures the risk–return trade-off in portfolio theory through a linear combination of two basis portfolios.
+
+$\frac{c - b\mu^*}{d}$ 
+  
+$\frac{a\mu^* - b}{d}$ 
+  determine the relative weighting between these two objectives. As **μ\*** increases above the MVP return, the return-targeting component receives greater weight, increasing portfolio risk to achieve higher expected returns. This formulation elegantly captures the risk–return trade-off in portfolio theory through a linear combination of two basis portfolios.
 
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
