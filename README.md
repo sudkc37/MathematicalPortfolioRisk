@@ -123,6 +123,34 @@ This separates the weights into **risk-minimizing** and **return-targeting** com
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
 <img width="727" alt="Screenshot 2024-11-05 at 11 00 58 AM" src="https://github.com/user-attachments/assets/1364554e-dddf-4e49-9b07-5cb91bebab03">
 
+
+3. Value-at-Risk Analysis
+
+VaR quantifies the **maximum expected loss** over a time horizon at a given confidence level. Formally:
+
+$$
+\text{VaR}_\alpha = \inf \{ x \in \mathbb{R} : P(L \le x) > 1 - \alpha \}.
+$$
+
+We employ **historical simulation with rolling windows**, computing portfolio returns:
+
+$$
+r_{p,t} = \sum_i w_i r_{i,t},
+$$
+
+calculating 30-day rolling returns:
+
+$$
+R_{30}(t) = \sum_{k=0}^{29} r_p(t-k),
+$$
+
+and determining the \((1-\alpha)\) percentile.  
+
+At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of the time**.  
+
+The empirical distribution is visualized using **kernel density estimation**.
+
+
 ## Minimum Variance Portfolio Var:
 
 <img width="783" alt="Screenshot 2024-11-05 at 11 04 42 AM" src="https://github.com/user-attachments/assets/69de274c-9a46-478e-948a-6194fcc05ec7">
