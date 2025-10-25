@@ -17,6 +17,7 @@ For assets *i* and *j*:
 $$ \text{Cov}(X, Y) = \frac{1}{n} \sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y}) $$
 
 Matrix represenatation of covariance matrix with n assets:
+
 $$
 \mathbf{\Sigma} = \begin{pmatrix}
 \sigma_{11} & \sigma_{12} & \cdots & \sigma_{1n} \\
