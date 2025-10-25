@@ -54,13 +54,20 @@ where,
 $$\Sigma^{-1}$$ is the inverse of the covariance matrix.  
 $$\mathbf{1}$$ is a vector of ones.
 
-This requires computing the inverse of the covariance matrix—a fundamental operation in numerical linear algebra. The portfolio return is 
+This requires computing the inverse of the covariance matrix—a fundamental operation in numerical linear algebra.  
 
-\( R_{\text{MVP}} = \frac{R' \Sigma^{-1} \mathbf{1}}{\mathbf{1}' \Sigma^{-1} \mathbf{1}} \)
+The portfolio return is:  
 
-and volatility is 
+$$
+R_{\text{MVP}} = \frac{R' \Sigma^{-1} \mathbf{1}}{\mathbf{1}' \Sigma^{-1} \mathbf{1}}
+$$
 
-\( \sigma_{\text{MVP}} = \sqrt{\frac{1}{\mathbf{1}' \Sigma^{-1} \mathbf{1}}} \).
+and the volatility is:  
+
+$$
+\sigma_{\text{MVP}} = \sqrt{\frac{1}{\mathbf{1}' \Sigma^{-1} \mathbf{1}}}
+$$
+
 
 
 
