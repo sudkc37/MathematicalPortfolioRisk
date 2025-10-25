@@ -33,7 +33,7 @@ $$
 We used **logarithmic returns**:
 
 $$ 
-rₜ = ln(Pₜ / Pₜ₋₁)
+\( r_t = \ln\left(\frac{P_t}{P_{t-1}}\right) \)
 $$
 Log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
 
