@@ -108,7 +108,7 @@ Then, the efficient frontier is given by:
 
 $$
 \sigma_p^2 = \frac{a\mu_p^2 - 2b\mu_p + c}{d}
-$$
+$$ 
 
 For a target return \( \mu^* \), the optimal weight vector obtained via Lagrangian optimization is:
 
