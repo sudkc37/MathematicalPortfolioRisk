@@ -196,7 +196,7 @@ $$
 S_{t+\Delta t} = S_t \exp\Big[(\mu - \frac{\sigma^2}{2}) \Delta t + \sigma \sqrt{\Delta t} \cdot Z_t\Big],
 $$
 
-where $Z_t \sim N(0, 1)$ and $\Delta t = 1/252$.  
+where $Z_t \sim N(0, 1)$ are **independent standard normal variates** and $\Delta t = 1/252$.  
 
 **Monte Carlo simulation** generates $M$ independent paths over $n$ steps for three-month horizons ($T = 3/12$), with parameters:
 
