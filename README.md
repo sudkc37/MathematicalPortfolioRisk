@@ -113,7 +113,7 @@ $$
 
 For a target return **μ\***, we solve the constrained optimization problem using Lagrangian multipliers with two constraints i.e **w′R = μ\***  (target return) and **w′1 = 1**  (budget constraint). The Lagrangian function is:
 
-![Equation](https://latex.codecogs.com/png.latex?L%20%3D%20%5Cfrac%7B1%7D%7B2%7D%20%5Cmathbf%7Bw%7D%27%20%5CSigma%20%5Cmathbf%7Bw%7D%20-%20%5Clambda_1%20(%5Cmathbf%7Bw%7D%27%20%5CR%20-%20%5Cmu^*)%20-%20%5Clambda_2%20(%5Cmathbf%7Bw%7D%27%201%20-%201))
+$L = \frac{1}{2} w' \Sigma w - \lambda_1 (w' R - \mu^*) - \lambda_2 (w' 1 - 1)$
 
 
 Taking first-order conditions (∂ℒ/∂w = 0) and solving the resulting system yields:
