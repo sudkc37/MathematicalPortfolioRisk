@@ -11,6 +11,24 @@ This research extends classical optimization by incorporating advanced risk metr
  
  2.1 Covariance Matrix Estimation
 
+The **covariance matrix** \( \Sigma \in \mathbb{R}^{n \times n} \) captures the variance–covariance structure of asset returns.  
+For assets \( i \) and \( j \):
+
+\[
+\sigma_{ij} = \frac{1}{n} \sum_{k=1}^{n} (R_{ik} - \bar{R}_i)(R_{jk} - \bar{R}_j)
+\]
+
+- The **diagonal elements** \( \sigma_{ii} \) represent the variance of individual assets.  
+- The **off-diagonal elements** \( \sigma_{ij} \) quantify the **co-movement** between asset \( i \) and asset \( j \).
+
+We compute **logarithmic returns** as:
+
+\[
+r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
+\]
+
+Log returns are preferred for their **additive property** and **approximate normality**. Returns are **annualized** by assuming **252 trading days** per year.
+
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
 <img width="727" alt="Screenshot 2024-11-05 at 11 00 58 AM" src="https://github.com/user-attachments/assets/1364554e-dddf-4e49-9b07-5cb91bebab03">
