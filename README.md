@@ -54,9 +54,8 @@ where,
 $$\Sigma^{-1}$$ is the inverse of the covariance matrix.  
 $$\mathbf{1}$$ is a vector of ones.
 
-This requires computing the inverse of the covariance matrix—a fundamental operation in numerical linear algebra.  
+The   portfolio return is the inverse of the covariance matrix:  
 
-The portfolio return is:  
 
 $$
 R_{\text{MVP}} = \frac{R' \Sigma^{-1} \mathbf{1}}{\mathbf{1}' \Sigma^{-1} \mathbf{1}}
