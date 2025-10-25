@@ -290,10 +290,11 @@ Strategic overweighting of high-return assets, combined with short positions in 
 
 The six-fold difference highlights the tail risk disparity between the portfolios.  
 
-- The **MVP** exhibits **low kurtosis**.  
-- The **TP** displays **fat tails**, consistent with its concentration in equities.
+- The MVP exhibits low kurtosis.  
+- The TP displays fat tails, consistent with its concentration in equities.
 
- 3.4 Optimized Portfolio
+
+<h3><span style="color:green; font-weight:bold;">  3.4 Optimized Portfolio</span></h3>
 
  For a **5% target return**:
 
