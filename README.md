@@ -9,7 +9,7 @@ This research extends classical optimization by incorporating advanced risk metr
 
  ## 2. Mathematical Foundation ##
  
- 2.1 Covariance Matrix Estimation
+2.1 Covariance Matrix Estimation
 
 The covariance matrix **Σ ∈ ℝⁿˣⁿ** captures the variance–covariance structure of asset returns.  
 For assets *i* and *j*:
@@ -235,3 +235,75 @@ estimated from historical data.
   - TSM: $\sigma^2 = 0.112$
 
 Strong correlation among technology stocks suggests **limited intra-sector diversification**.
+
+ 3.2 Covariance Structure
+
+ **Minimum Variance Portfolio**  
+
+- **Return:** 2.39%  
+- **Volatility:** 5.55%  
+- **Sharpe Ratio:** 0.071 ($R_f = 2\%$)  
+- **Allocation:** 98.3% in VTEB  
+
+The extreme concentration in lowest-variance assets, with **negative weights** (short positions) in select equities, minimizes portfolio variance.
+
+---
+
+**Tangency Portfolio**  
+
+- **Return:** 32.15%  
+- **Volatility:** 20.33%  
+- **Sharpe Ratio:** 1.484  
+- **Major Allocations:**  
+  - VTEB: 75.3%  
+  - NVDA: 33.9%  
+  - AAPL: 21.1%  
+  - Short positions: ABEV (-19.2%), BA (-18.9%)  
+
+Strategic overweighting of high-return assets, combined with short positions in underperformers, achieves **superior risk-adjusted returns**.
+
+ 3.3 Value-at-Risk Comparison
+
+ For an initial portfolio value of **$100,000**, the **30-day Value at Risk (VaR) at 95% confidence** is:
+
+- **Minimum Variance Portfolio (MVP) VaR:** $2,667 (2.67%)  
+- **Tangency Portfolio (TP) VaR:** $14,941 (14.94%)  
+
+The six-fold difference highlights the **tail risk disparity** between the portfolios.  
+
+- The **MVP** exhibits **low kurtosis**.  
+- The **TP** displays **fat tails**, consistent with its concentration in equities.
+
+ 3.4 Optimized Portfolio
+
+ For a **5% target return**:
+
+- **Volatility:** 6.65%  
+- **30-day VaR:** $3,931 (3.93%)  
+- **Portfolio Allocations:**  
+  - VTEB: 104.1%  
+  - AAPL: 3.9%  
+  - NVDA: 3.9%  
+  - V: 5.0%  
+
+The solution employs **leverage in low-risk assets** balanced by **short positions**, demonstrating the power of **constrained optimization**.
+
+3.5 Stochastic Simulations
+
+**Three-month Monte Carlo simulations** (200 paths, 100 steps) reveal:
+
+- **Tangency Portfolio (TP):**  
+  - Mean terminal value: $108,500  
+  - 90% Confidence Interval (CI): [$92,000, $128,000]
+
+- **Minimum Variance Portfolio (MVP):**  
+  - Mean terminal value: $101,000  
+  - 90% CI: [$98,500, $103,500]
+
+- **Optimized Portfolio (5% target return):**  
+  - Mean terminal value: $101,500  
+  - 90% CI: [$96,800, $106,500]
+
+**Observations:**  
+- High-beta stocks exhibit **wide trajectory dispersion**.  
+- Stable assets show **narrow confidence bands**, validating **risk-return trade-offs**.
