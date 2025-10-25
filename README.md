@@ -7,15 +7,9 @@ This presents a comprehensive computational framework for portfolio optimization
  
 This research extends classical optimization by incorporating advanced risk metrics and stochastic simulation. I analyze nine securities (TSLA, AAPL, NVDA, TSM, ABEV, VTEB, V, AMD, BA) using seven years of daily prices, employing covariance matrix estimation, analytical portfolio optimization, Monte Carlo simulation for risk assessment, and path-dependent stochastic modeling.
 
- ## 2. Mathematical Foundation ##
- 
-2.1 Covariance Matrix Estimation
+
 
 <h3><span style="color:green; font-weight:bold;">2.1 Covariance Matrix Estimation</span></h3>
-
-<h3><font color="green"><b>2.1 Covariance Matrix Estimation</b></font></h3>
-
-
 
 The covariance matrix **Σ ∈ ℝⁿˣⁿ** captures the variance–covariance structure of asset returns.  
 For assets *i* and *j*:
@@ -45,7 +39,8 @@ $$
 Log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
 
 
-2.2 Minimum Variance Portfolio
+
+<h3><span style="color:green; font-weight:bold;">2.2 Minimum Variance Portfolio</span></h3>
 
 A minimum variance portfolio is a selection of assets that aims to minimize the overall volatility or risk of the portfolio. It achieves this by carefully allocating investments across different assets based on their historical volatilities, expected returns, and correlations with each other. The goal is to construct a portfolio where the assets' movements offset each other as much as possible, reducing the portfolio's overall risk.
 
@@ -73,7 +68,8 @@ $$
 \sigma_{\text{MVP}} = \sqrt{\frac{1}{\mathbf{1}' \Sigma^{-1} \mathbf{1}}}
 $$
 
-2.3 Tangency Portfolio
+
+<h3><span style="color:green; font-weight:bold;">2.3 Tangency Portfolio</span></h3>
 
 A tendency portfolio is a strategy that capitalizes on persistent trends or patterns in asset prices or market behaviors. It involves selecting assets based on their historical performance trends, such as momentum or mean reversion. The goal is to exploit these tendencies to achieve superior returns.
 
@@ -130,7 +126,7 @@ This separates the weights into **risk-minimizing** and **return-targeting** com
 <img width="727" alt="Screenshot 2024-11-05 at 11 00 58 AM" src="https://github.com/user-attachments/assets/1364554e-dddf-4e49-9b07-5cb91bebab03">
 
 
-3. Value-at-Risk Analysis
+## 3. Value-at-Risk Analysis ##
 
 VaR quantifies the **maximum expected loss** over a time horizon at a given confidence level. Formally:
 
@@ -170,7 +166,7 @@ At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of t
 
 
 
-4. Stochastic Simulation: Geometric Brownian Motion
+## 4. Stochastic Simulation: Geometric Brownian Motion ##
    
 The Geometric Brownian Motion (GBM) models asset prices through the stochastic differential equation:
 
@@ -228,7 +224,7 @@ estimated from historical data.
 
  ## 3.  Empirical Results ##
  
- 3.1 Covariance Structure
+ <h3><span style="color:green; font-weight:bold;"> 3.1 Covariance Structure</span></h3>
 
  The annualized covariance matrix reveals **heterogeneous risk profiles**:
 
@@ -244,7 +240,8 @@ estimated from historical data.
 
 Strong correlation among technology stocks suggests **limited intra-sector diversification**.
 
- 3.2 Covariance Structure
+
+<h3><span style="color:green; font-weight:bold;"> 3.2 Covariance Structure</span></h3>
 
  **Minimum Variance Portfolio**  
 
@@ -270,7 +267,8 @@ The extreme concentration in lowest-variance assets, with **negative weights** (
 
 Strategic overweighting of high-return assets, combined with short positions in underperformers, achieves **superior risk-adjusted returns**.
 
- 3.3 Value-at-Risk Comparison
+
+ <h3><span style="color:green; font-weight:bold;"> 3.3 Value-at-Risk Comparison</span></h3>
 
  For an initial portfolio value of **$100,000**, the **30-day Value at Risk (VaR) at 95% confidence** is:
 
@@ -296,7 +294,8 @@ The six-fold difference highlights the **tail risk disparity** between the portf
 
 The solution employs **leverage in low-risk assets** balanced by **short positions**, demonstrating the power of **constrained optimization**.
 
-3.5 Stochastic Simulations
+
+<h3><span style="color:green; font-weight:bold;">3.5 Stochastic Simulations</span></h3>
 
 **Three-month Monte Carlo simulations** (200 paths, 100 steps) reveal:
 
