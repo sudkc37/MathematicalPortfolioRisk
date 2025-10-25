@@ -72,7 +72,7 @@ $$
 In Constrast, A tendency portfolio is a strategy that capitalizes on persistent trends or patterns in asset prices or market behaviors. It involves selecting assets based on their historical performance trends, such as momentum or mean reversion. The goal is to exploit these tendencies to achieve superior returns.
 
 $$
-\text{TP_weight} = \frac{\Sigma^{-1} \mathbf{R}_i}{\sum_{i=1}^{n} \mathbf{R}_i \,(\Sigma^{-1}\mathbf{1})}
+\text{TPweight} = \frac{\Sigma^{-1} \mathbf{R}_i}{\sum_{i=1}^{n} \mathbf{R}_i \,(\Sigma^{-1}\mathbf{1})}
 $$
 where,
 $$\Sigma^{-1}\, \text{is the inverse of covariance matrix.} $$
