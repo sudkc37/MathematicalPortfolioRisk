@@ -96,6 +96,34 @@ $$
 
 <h3><span style="color:green; font-weight:bold;">2.4 Efficient Frontier and Constrained Optimization</span></h3>
 
+The **efficient frontier** represents portfolios that maximize return for a given level of risk.
+
+Define the following:
+
+- **a** = 1′Σ⁻¹1  
+- **b** = R′Σ⁻¹1  
+- **c** = R′Σ⁻¹R  
+- **d** = ac − b²  
+
+Then, the frontier equation is:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The efficient frontier represents portfolios that maximize return for a given level of risk.  
 
 Define the following parameters:  
@@ -114,12 +142,6 @@ $$
 $$ 
 
 For a target return $\mu^*$, the optimal weight vector via Lagrangian optimization is:
-
-
-$$
-\mathbf{w} = \left( \frac{c - b\mu^*}{d} \right) \Sigma^{-1} \mathbf{1} 
-+ \left( \frac{a\mu^* - b}{d} \right) \Sigma^{-1} \mathbf{R}
-$$
 
 ![w equation](https://latex.codecogs.com/png.image?\dpi{150}\bg_white\mathbf{w}=\left(\frac{c-b\mu^*}{d}\right)\Sigma^{-1}\mathbf{1}+\left(\frac{a\mu^*-b}{d}\right)\Sigma^{-1}\mathbf{R})
 
