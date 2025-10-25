@@ -93,7 +93,8 @@ $$
 \sigma_{\text{TP}} = \sqrt{\frac{R' \Sigma^{-1} R}{R' \Sigma^{-1} \mathbf{1}}}
 $$
 
-2.4 Efficient Frontier and Constrained Optimization
+
+<h3><span style="color:green; font-weight:bold;">2.4 Efficient Frontier and Constrained Optimization</span></h3>
 
 The efficient frontier represents portfolios that maximize return for a given level of risk.  
 
@@ -119,6 +120,9 @@ $$
 \mathbf{w} = \left( \frac{c - b\mu^*}{d} \right) \Sigma^{-1} \mathbf{1} 
 + \left( \frac{a\mu^* - b}{d} \right) \Sigma^{-1} \mathbf{R}
 $$
+
+![w equation](https://latex.codecogs.com/png.image?\dpi{150}\bg_white\mathbf{w}=\left(\frac{c-b\mu^*}{d}\right)\Sigma^{-1}\mathbf{1}+\left(\frac{a\mu^*-b}{d}\right)\Sigma^{-1}\mathbf{R})
+
 
 This separates the weights into **risk-minimizing** and **return-targeting** components.
 
