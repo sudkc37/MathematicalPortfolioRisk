@@ -1,5 +1,8 @@
                                   Portfolio Optimization and Risk Assessment: A Computational Approach u
 
+
+This paper presents a comprehensive computational framework for portfolio optimization and risk assessment, integrating classical mean-variance optimization with stochastic simulation methods. We implement three distinct portfolio construction strategies: Minimum Variance Portfolio (MVP), Tendency Portfolio, and Desired Portfolio, utilizing variance-covariance matrix estimation from historical equity data. Risk quantification is performed through parametric Value at Risk (VaR) calculations at multiple confidence levels. Furthermore, we employ Geometric Brownian Motion (GBM) to simulate forward-looking price trajectories over a three-month horizon, providing probabilistic forecasts of portfolio performance. The methodology demonstrates the practical application of optimization theory, numerical linear algebra, and stochastic calculus to quantitative finance, offering a robust framework for portfolio management decision-making under uncertainty.
+
 Constructed the Minimum Variance Portfolio and optimized Tendency and Desired Portfolios using
 a variance-covariance matrix. To assess risk, I applied Value at Risk (VaR) to quantify the 
 maximum potential loss each portfolio could face over a specified period with a given confidence
