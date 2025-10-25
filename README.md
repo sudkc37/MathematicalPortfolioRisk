@@ -162,7 +162,7 @@ At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of t
 ## Efficient Frontier for MVP Vs Tendency Vs Desired Portfolio:
 <img width="793" alt="Screenshot 2024-11-05 at 11 07 55 AM" src="https://github.com/user-attachments/assets/f3f55755-32f0-4681-92ce-d7cc20f0181f">
 
-<img width="936" alt="Screenshot 2024-11-05 at 11 13 55 AM" src="https://github.com/user-attachments/assets/5e3b5a94-a85f-4744-a6f6-f7d1f4a7b8e4">
+
 
 4. Stochastic Simulation: Geometric Brownian Motion
    
