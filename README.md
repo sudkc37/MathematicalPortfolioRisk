@@ -30,13 +30,13 @@ $$
 - **Diagonal elements** (σᵢᵢ) represent individual asset variances.  
 - **Off-diagonal elements** (σᵢⱼ) measure co-movement between assets *i* and *j*.
 
-We used **logarithmic returns**:
+We used **logarithmic returns** as:
 
 $$ 
 \( r_t = \ln\left(\frac{P_t}{P_{t-1}}\right) \)
 $$
 
-Log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
+A log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
 
 
 
@@ -55,7 +55,7 @@ where,
 $$\Sigma^{-1}$$ is the inverse of the covariance matrix.  
 $$\mathbf{1}$$ is a vector of ones.
 
-The portfolio return is the inverse of the covariance matrix:  
+The portfolio return is then the inverse of the covariance matrix:  
 
 
 $$
