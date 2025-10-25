@@ -14,7 +14,7 @@ This research extends classical optimization by incorporating advanced risk metr
 The covariance matrix **Σ ∈ ℝⁿˣⁿ** captures the variance–covariance structure of asset returns.  
 For assets *i* and *j*:
 
-σᵢⱼ = (1/n) Σₖ₌₁ⁿ (Rᵢₖ − R̄ᵢ)(Rⱼₖ − R̄ⱼ)
+$$ \text{Cov}(X, Y) = \frac{1}{n} \sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y}) $$
 
 - **Diagonal elements** (σᵢᵢ) represent individual asset variances.  
 - **Off-diagonal elements** (σᵢⱼ) measure co-movement between assets *i* and *j*.
