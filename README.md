@@ -141,13 +141,13 @@ The coefficients (&#40;c − bμ<sup>*</sup>&#41; / d) and (&#40;aμ<sup>*</sup>
 
 ## 3. Value-at-Risk Analysis ##
 
-VaR quantifies the **maximum expected loss** over a time horizon at a given confidence level. Formally:
+VaR quantifies the maximum expected loss over a time horizon at a given confidence level. Formally:
 
 $$
 \text{VaR}_\alpha = \inf \{ x \in \mathbb{R} : P(L \le x) > 1 - \alpha \}.
 $$
 
-We employ **historical simulation with rolling windows**, computing portfolio returns:
+We employ historical simulation with rolling windows, computing portfolio returns:
 
 $$
 r_{p,t} = \sum_i w_i r_{i,t},
