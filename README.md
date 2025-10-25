@@ -54,6 +54,15 @@ where,
 $$\Sigma^{-1}$$ is the inverse of the covariance matrix.  
 $$\mathbf{1}$$ is a vector of ones.
 
+This requires computing the inverse of the covariance matrix—a fundamental operation in numerical linear algebra. The portfolio return is 
+
+\( R_{\text{MVP}} = \frac{R' \Sigma^{-1} \mathbf{1}}{\mathbf{1}' \Sigma^{-1} \mathbf{1}} \)
+
+and volatility is 
+
+\( \sigma_{\text{MVP}} = \sqrt{\frac{1}{\mathbf{1}' \Sigma^{-1} \mathbf{1}}} \).
+
+
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
 <img width="727" alt="Screenshot 2024-11-05 at 11 00 58 AM" src="https://github.com/user-attachments/assets/1364554e-dddf-4e49-9b07-5cb91bebab03">
