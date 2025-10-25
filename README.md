@@ -30,13 +30,13 @@ $$
 - **Diagonal elements** (σᵢᵢ) represent individual asset variances.  
 - **Off-diagonal elements** (σᵢⱼ) measure co-movement between assets *i* and *j*.
 
-We used **logarithmic returns** as:
+We used  logarithmic returns as:
 
 $$ 
 \( r_t = \ln\left(\frac{P_t}{P_{t-1}}\right) \)
 $$
 
-A log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
+A log returns are preferred for their additive property and  approximate normality , and are annualized using 252 trading days.
 
 
 
@@ -130,7 +130,7 @@ This solution decomposes into two interpretable components:
 
 ---
  
-The coefficients $((c - b\mu^*) / d)$ and $((a\mu^* - b) / d)$ determine the relative weighting between these two objectives. As **μ\*** increases above the MVP return, the return-targeting component receives greater weight, increasing portfolio risk to achieve higher expected returns. This formulation elegantly captures the risk–return trade-off in portfolio theory through a linear combination of two basis portfolios.
+The coefficients $$((c - b\mu^*) / d)$$ and $$((a\mu^* - b) / d)$$ determine the relative weighting between these two objectives. As **μ\*** increases above the MVP return, the return-targeting component receives greater weight, increasing portfolio risk to achieve higher expected returns. This formulation elegantly captures the risk–return trade-off in portfolio theory through a linear combination of two basis portfolios.
 
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
