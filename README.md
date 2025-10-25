@@ -325,5 +325,5 @@ The solution employs leverage in low-risk assets balanced by short positions, de
   - 90% CI: [$96,800, $106,500]
 
 **Observations:**  
-- High-beta stocks exhibit **wide trajectory dispersion**.  
-- Stable assets show **narrow confidence bands**, validating **risk-return trade-offs**.
+- High-beta stocks exhibit wide trajectory dispersion.  
+- Stable assets show narrow confidence bands, validating risk-return trade-offs.
