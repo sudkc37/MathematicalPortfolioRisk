@@ -121,8 +121,8 @@ Taking first-order conditions (∂ℒ/∂w = 0) and solving the resulting system
 This solution decomposes into two interpretable components:
 
 1. **Risk-minimizing component:**  
-   $$`((c − bμ*) / d) · (Σ⁻¹1)`$$
-   Represents the allocation pattern that minimizes variance, proportional to the Minimum Variance Portfolio (MVP) weights.
+   $((c - b\mu^*) / d) \cdot (\Sigma^{-1}1)$
+ Represents the allocation pattern that minimizes variance, proportional to the Minimum Variance Portfolio (MVP) weights.
 
 2. **Return-targeting component:**  
    `((aμ* − b) / d) · (Σ⁻¹R)`  
