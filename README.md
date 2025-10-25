@@ -218,3 +218,20 @@ estimated from historical data.
 ## Simulated Value of Desired Portfolio:
 <img width="758" alt="Screenshot 2024-11-05 at 11 10 21 AM" src="https://github.com/user-attachments/assets/0019d66e-1653-4a24-9b7a-4e12e134f3c5">
 
+ ## 3.  Empirical Results ##
+ 
+ 3.1 Covariance Structure
+
+ The annualized covariance matrix reveals **heterogeneous risk profiles**:
+
+- **High-volatility tech stocks**:
+  - TSLA: $\sigma^2 = 0.377$
+  - NVDA: $\sigma^2 = 0.253$
+  - AMD: $\sigma^2 = 0.293$
+- **Low-volatility fixed income**:
+  - VTEB: $\sigma^2 = 0.003$
+- **Moderate-risk equities**:
+  - AAPL: $\sigma^2 = 0.093$
+  - TSM: $\sigma^2 = 0.112$
+
+Strong correlation among technology stocks suggests **limited intra-sector diversification**.
