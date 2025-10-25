@@ -161,7 +161,7 @@ $$
 
 and determining the $\((1-\alpha)\)$ percentile.  
 
-At **95% confidence**, VaR represents the loss threshold **exceeded only 5% of the time**. The empirical distribution is visualized using **kernel density estimation**.
+At 95% confidence, VaR represents the loss threshold exceeded only 5% of the time. The empirical distribution is visualized using kernel density estimation.
 
 
 ## Minimum Variance Portfolio Var:
@@ -197,23 +197,23 @@ where:
   - $W_t \sim N(0, t)$,
   - continuous paths.
  
-This formulation ensures $S_t > 0$ for all $t \ge 0$ when $S_0 > 0$, making it suitable for modeling **asset prices**. The **multiplicative noise structure** ($\sigma S_t \, dW_t$) ensures that **percentage changes remain bounded**, while allowing **absolute price changes to scale with the price level**.
+This formulation ensures $S_t > 0$ for all $t \ge 0$ when $S_0 > 0$, making it suitable for modeling asset prices. The multiplicative noise structure ($\sigma S_t \, dW_t$) ensures that percentage changes remain bounded, while allowing absolute price changes to scale with the price level.
 
-Applying **Itô's lemma** yields:
+Applying Itô's lemma yields:
 
 $$
 S_t = S_0 \exp\Big[(\mu - \frac{\sigma^2}{2}) t + \sigma W_t\Big].
 $$
 
-For **computational implementation**, we discretize it using the **Euler–Maruyama scheme**. This Partition the interval $[0, T]$ into $n$ subintervals of width: $$\Delta t = \frac{T}{n}$$
+For computational implementation, we discretize it using the Euler–Maruyama scheme. This Partition the interval $[0, T]$ into $n$ subintervals of width: $$\Delta t = \frac{T}{n}$$
 
 $$
 S_{t+\Delta t} = S_t \exp\Big[(\mu - \frac{\sigma^2}{2}) \Delta t + \sigma \sqrt{\Delta t} \cdot Z_t\Big],
 $$
 
-where $Z_t \sim N(0, 1)$ are **independent standard normal variates** and $\Delta t = 1/252$.  
+where $Z_t \sim N(0, 1)$ are independent standard normal variates and $\Delta t = 1/252$.  
 
-**Monte Carlo simulation** generates $M$ independent paths over $n$ steps for three-month horizons ($T = 3/12$), with parameters:
+Monte Carlo simulation generates $M$ independent paths over $n$ steps for three-month horizons ($T = 3/12$), with parameters:
 
 - $\hat{\mu} = E[r_t]$,
 - $\hat{\sigma} = \sqrt{\text{Var}[r_t]}$  
@@ -239,7 +239,7 @@ estimated from historical data.
  
  <h3><span style="color:green; font-weight:bold;"> 3.1 Covariance Structure</span></h3>
 
- The annualized covariance matrix reveals **heterogeneous risk profiles**:
+ The annualized covariance matrix reveals heterogeneous risk profiles:
 
 - **High-volatility tech stocks**:
   - TSLA: $\sigma^2 = 0.377$
@@ -251,7 +251,7 @@ estimated from historical data.
   - AAPL: $\sigma^2 = 0.093$
   - TSM: $\sigma^2 = 0.112$
 
-Strong correlation among technology stocks suggests **limited intra-sector diversification**.
+Strong correlation among technology stocks suggests limited intra-sector diversification.
 
 
 <h3><span style="color:green; font-weight:bold;"> 3.2 Covariance Structure</span></h3>
@@ -263,7 +263,7 @@ Strong correlation among technology stocks suggests **limited intra-sector diver
 - **Sharpe Ratio:** 0.071 ($R_f = 2\%$)  
 - **Allocation:** 98.3% in VTEB  
 
-The extreme concentration in lowest-variance assets, with **negative weights** (short positions) in select equities, minimizes portfolio variance.
+The extreme concentration in lowest-variance assets, with negative weights (short positions) in select equities, minimizes portfolio variance.
 
 ---
 
@@ -278,7 +278,7 @@ The extreme concentration in lowest-variance assets, with **negative weights** (
   - AAPL: 21.1%  
   - Short positions: ABEV (-19.2%), BA (-18.9%)  
 
-Strategic overweighting of high-return assets, combined with short positions in underperformers, achieves **superior risk-adjusted returns**.
+Strategic overweighting of high-return assets, combined with short positions in underperformers, achieves superior risk-adjusted returns.
 
 
  <h3><span style="color:green; font-weight:bold;"> 3.3 Value-at-Risk Comparison</span></h3>
@@ -288,7 +288,7 @@ Strategic overweighting of high-return assets, combined with short positions in 
 - **Minimum Variance Portfolio (MVP) VaR:** $2,667 (2.67%)  
 - **Tangency Portfolio (TP) VaR:** $14,941 (14.94%)  
 
-The six-fold difference highlights the **tail risk disparity** between the portfolios.  
+The six-fold difference highlights the tail risk disparity between the portfolios.  
 
 - The **MVP** exhibits **low kurtosis**.  
 - The **TP** displays **fat tails**, consistent with its concentration in equities.
@@ -305,7 +305,7 @@ The six-fold difference highlights the **tail risk disparity** between the portf
   - NVDA: 3.9%  
   - V: 5.0%  
 
-The solution employs **leverage in low-risk assets** balanced by **short positions**, demonstrating the power of **constrained optimization**.
+The solution employs leverage in low-risk assets balanced by short positions, demonstrating the power of constrained optimization.
 
 
 <h3><span style="color:green; font-weight:bold;">3.5 Stochastic Simulations</span></h3>
