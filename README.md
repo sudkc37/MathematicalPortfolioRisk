@@ -11,23 +11,19 @@ This research extends classical optimization by incorporating advanced risk metr
  
  2.1 Covariance Matrix Estimation
 
-The **covariance matrix** \( \Sigma \in \mathbb{R}^{n \times n} \) captures the variance–covariance structure of asset returns.  
-For assets \( i \) and \( j \):
+The covariance matrix **Σ ∈ ℝⁿˣⁿ** captures the variance–covariance structure of asset returns.  
+For assets *i* and *j*:
 
-\[
-\sigma_{ij} = \frac{1}{n} \sum_{k=1}^{n} (R_{ik} - \bar{R}_i)(R_{jk} - \bar{R}_j)
-\]
+σᵢⱼ = (1/n) Σₖ₌₁ⁿ (Rᵢₖ − R̄ᵢ)(Rⱼₖ − R̄ⱼ)
 
-- The **diagonal elements** \( \sigma_{ii} \) represent the variance of individual assets.  
-- The **off-diagonal elements** \( \sigma_{ij} \) quantify the **co-movement** between asset \( i \) and asset \( j \).
+- **Diagonal elements** (σᵢᵢ) represent individual asset variances.  
+- **Off-diagonal elements** (σᵢⱼ) measure co-movement between assets *i* and *j*.
 
-We compute **logarithmic returns** as:
+We use **logarithmic returns**:
 
-\[
-r_t = \ln\left(\frac{P_t}{P_{t-1}}\right)
-\]
+rₜ = ln(Pₜ / Pₜ₋₁)
 
-Log returns are preferred for their **additive property** and **approximate normality**. Returns are **annualized** by assuming **252 trading days** per year.
+Log returns are preferred for their **additive property** and **approximate normality**, and are **annualized** using 252 trading days.
 
 
 ## Minimum Variance Portfolio and Tendency Portfolio Efficient Frontier:
