@@ -315,7 +315,7 @@ The six-fold difference highlights the tail risk disparity between the portfolio
   - VTEB: 104.1%  
   - AAPL: 3.9%  
   - NVDA: 3.9%  
-  - V: 5.0%  
+  - V: - 11.9.0%  
 
 The solution employs leverage in low-risk assets balanced by short positions, demonstrating the power of constrained optimization.
 
