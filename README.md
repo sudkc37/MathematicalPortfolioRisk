@@ -5,7 +5,14 @@
   <p><i>Sudip Khadka</i></p>
 </div>
 
-This presents a comprehensive computational framework for portfolio optimization and risk assessment, integrating classical mean-variance optimization with stochastic simulation methods. We implement three distinct portfolio construction strategies: Minimum Variance Portfolio (MVP), Tendency Portfolio, and Desired Portfolio, utilizing variance-covariance matrix estimation from historical equity data. Risk quantification is performed through parametric Value at Risk (VaR) calculations at multiple confidence levels. Furthermore, we employ Geometric Brownian Motion (GBM) to simulate forward-looking price trajectories over a three-month horizon, providing probabilistic forecasts of portfolio performance. The methodology demonstrates the practical application of optimization theory, numerical linear algebra, and stochastic calculus to quantitative finance, offering a robust framework for portfolio management decision-making under uncertainty.
+<hr>
+
+<h3>1. Introduction</h3>
+<p>
+  This presents a comprehensive computational framework for portfolio optimization and risk assessment, integrating classical mean-variance optimization with stochastic simulation methods. We implement three distinct portfolio construction strategies: Minimum Variance Portfolio (MVP), Tendency Portfolio, and Desired Portfolio, utilizing variance-covariance matrix estimation from historical equity data. Risk quantification is performed through parametric Value at Risk (VaR) calculations at multiple confidence levels. Furthermore, we employ Geometric Brownian Motion (GBM) to simulate forward-looking price trajectories over a three-month horizon, providing probabilistic forecasts of portfolio performance. The methodology demonstrates the practical application of optimization theory, numerical linear algebra, and stochastic calculus to quantitative finance, offering a robust framework for portfolio management decision-making under uncertainty..
+</p>
+
+
 
  ## 1. Methodology ##
  
